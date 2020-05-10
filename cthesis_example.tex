@@ -1,0 +1,50 @@
+\documentclass[accent=65a97c]{cthesis}
+\usepackage[math]{blindtext}
+
+\begin{document}
+
+\begin{titlepage}
+
+\gap{0cm}
+\titlecolor{DocColor}
+\txtcolor{white}
+\thesistype{One Nice Thesis}
+\title{The Writing Of A \LaTeX Class Extension for \texttt{report.cls}}
+\author{Author Of This Thesis}
+\supervisor{Prof. Advisor}
+\date{\today}
+
+\vspace*{0cm}%
+\maketitle
+\end{titlepage}
+
+\newpage\null\thispagestyle{empty}\newpage
+\pagenumbering{roman}
+\thispagestyle{front}
+
+\begin{abstract}
+    This is an abstract. \blindtext
+\end{abstract}
+
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents
+\cleardoublepage
+
+\pagenumbering{arabic}
+\pagestyle{main}
+
+    \chapter{CThesis Example}
+    \section{The First Section}
+    \blindtext
+    \subsection{The First Subsection}
+    \blindtext
+    \blindtext
+    \blindtext
+    \blindtext
+    \blindtext
+    \blindtext
+    \blindtext
+    \blindtext
+    \chapter{Second Chapter}
+
+\end{document}
